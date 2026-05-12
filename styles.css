@@ -315,17 +315,13 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 8px;
-  /* Máscara para suavizar as bordas da imagem */
-  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 60%, transparent 100%);
-  mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 60%, transparent 100%);
 }
 
 .lab-iso-img {
   width: 100%;
-  max-height: 340px;
+  max-height: 360px;
   object-fit: contain;
-  /* Elimina o fundo branco misturando com o fundo da página */
-  mix-blend-mode: multiply;
+  filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.14));
   animation: isoFloat 4s ease-in-out infinite, isoFadeIn 0.8s ease-out forwards;
   transform-origin: center bottom;
 }
@@ -342,8 +338,9 @@ h3 {
 }
 
 @media (max-width: 920px) {
-  .lab-iso-img { max-height: 240px; }
+  .lab-iso-img { max-height: 260px; }
 }
+
 
 
 .section-intro {
