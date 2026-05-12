@@ -68,15 +68,8 @@
         <div class="section-heading">
           <div class="section-kicker">
             <p class="eyebrow">Serviços</p>
-            <div class="lab-scene-wrapper" aria-hidden="true">
-              <div class="lab-animation-container">
-                <!-- Fundo com prateleiras -->
-                <img src="assets/anim/lab_bg.png" alt="" class="lab-layer lab-bg" />
-                <!-- Personagem 1 (Mulher) -->
-                <img src="assets/anim/char1.png" alt="" class="lab-layer lab-char1" />
-                <!-- Personagem 2 (Homem) -->
-                <img src="assets/anim/char2.png" alt="" class="lab-layer lab-char2" />
-              </div>
+            <div class="lab-photo-wrapper">
+              <img src="assets/lab-photo.png" alt="Laboratório Amazonas — ambiente clínico profissional" class="lab-photo" />
             </div>
           </div>
           <h2>Um painel completo para prevenir, investigar e acompanhar</h2>
@@ -196,22 +189,7 @@
       </div>
       <span>Criado por BVL System</span>
     </footer>
-    <script>
-      window.addEventListener("scroll", () => {
-        const scene = document.querySelector(".lab-svg-scene");
-        if (scene) {
-          const scrolled = window.pageYOffset;
-          const section = document.querySelector("#servicos");
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
-          
-          if (scrolled > sectionTop - window.innerHeight && scrolled < sectionTop + sectionHeight) {
-            const val = (scrolled - (sectionTop - window.innerHeight)) * 0.15;
-            scene.style.transform = `translateX(-${val}px)`;
-          }
-        }
-      });
-    </script>
+
   </body>
 </html>
 
