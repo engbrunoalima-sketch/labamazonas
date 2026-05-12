@@ -315,15 +315,18 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 8px;
+  /* Máscara para suavizar as bordas da imagem */
+  -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 60%, transparent 100%);
 }
 
 .lab-iso-img {
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-  border-radius: 20px;
+  /* Elimina o fundo branco misturando com o fundo da página */
+  mix-blend-mode: multiply;
   animation: isoFloat 4s ease-in-out infinite, isoFadeIn 0.8s ease-out forwards;
-  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.12));
   transform-origin: center bottom;
 }
 
