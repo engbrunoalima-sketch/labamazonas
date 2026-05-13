@@ -309,6 +309,9 @@ h3 {
 
 /* ─── Ilustração Isométrica de Lab ─── */
 .lab-iso-wrapper {
+  background: transparent; /* Card transparente */
+  border: none;
+  box-shadow: none;
   width: 100%;
   aspect-ratio: 4 / 3;
   display: flex;
@@ -324,7 +327,7 @@ h3 {
   object-fit: contain;
   animation: isoFloat 4s ease-in-out infinite, isoFadeIn 0.8s ease-out forwards;
   transform-origin: center bottom;
-  filter: drop-shadow(0 15px 25px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));
 }
 
 @keyframes isoFloat {
